@@ -1,4 +1,7 @@
-function toppings_choice (){
+kitchen();
+
+
+async function toppings_choice (){
     return new Promise((resolve,reject)=>{
         setTimeout(()=>{
 
@@ -9,6 +12,9 @@ function toppings_choice (){
 }
 
 //toppings_choice()
+// Trigger the function
+
+
 
 async function kitchen(){
 
@@ -23,9 +29,7 @@ async function kitchen(){
 
 }
 
-// Trigger the function
 
-kitchen();
 
 console.log("doing the dishes")
 console.log("cleaning the tables")

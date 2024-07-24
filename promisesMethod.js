@@ -1,11 +1,11 @@
 /*const promise1 = new Promise((resolve, reject) => {
-    setTimeout(resolve, 300, "resolved");
+    setTimeout(resolve, 3000, "resolved");
 }); //will be resolved after 300ms
 
 const promise2 = 93; //non-promise always marked as resolved
 
 const promise3 = new Promise((resolve, reject) => {
-    setTimeout(resolve, 100, "resolved2");
+    setTimeout(resolve, 1000, "resolved2");
 }); // will be resolved after 100ms
 
 Promise.all([promise1, promise2, promise3])
@@ -30,11 +30,11 @@ Promise.all([promise1, promise2, promise3])
 });
 
 const promise2 = new Promise((resolve, reject) => {
-    setTimeout(resolve, 2000,"two");
+    setTimeout(resolve, 3000,"two");
 });
 
 const promise3 = new Promise((resolve, reject) => {
-    setTimeout(reject, 3000,"rejected");
+    setTimeout(reject, 1000,"rejected");
 });
 
 Promise.all([promise1, promise2, promise3])
@@ -58,21 +58,20 @@ Promise.all Behavior:
 
 
 /*const SlowlyDone = new Promise((resolve, reject) => {
-    setTimeout(resolve, 500, "Done slowly");
+    setTimeout(resolve, 1000, "Done slowly");
 }); //resolves after 500ms
 
 const QuicklyDone = new Promise((resolve, reject) => {
-    setTimeout(resolve, 100, "Done quickly");
+    setTimeout(resolve, 1000, "Done quickly");
 }); //resolves after 100ms
 
 const Rejection = new Promise((resolve, reject) => {
-    setTimeout(reject, 100, "Rejected"); //always rejected
+    setTimeout(reject, 500, "Rejected"); //always rejected
 });
 
 Promise.any([SlowlyDone, QuicklyDone, Rejection])
     .then((value) => {
         console.log(value);
-        //  QuicklyDone fulfils first
     })
     .catch((err) => {
         console.log(err);
@@ -85,12 +84,12 @@ Promise.any Behavior:
 - Note that, Promise.any() was supported in node.js 15.0.0.*/
 
 
-/*const pro1 = new Promise((resolve, reject) => {
-    setTimeout(() => resolve("one"), 200);
+const pro1 = new Promise((resolve, reject) => {
+    setTimeout(() => resolve("one"), 100);
 });
 
 const pro2 = new Promise((resolve, reject) => {
-    setTimeout(() => resolve("two"), 100);
+    setTimeout(() => resolve("two"), 500);
 });
 
 const pro3 = new Promise((resolve, reject) => {
@@ -107,7 +106,7 @@ Promise.race([pro1, pro2, pro3, pro4])
     })
     .catch((err) => {
         console.log(err);
-    });*/
+    });
 
 
 
