@@ -13,7 +13,7 @@ console.log(z)*/
 let x = 5
 console.log(x)
 let y = --x + x--;
-let x = `abc`;
+  let x = `abc`;
 //y=x
 console.log(x)
 console.log(y)
