@@ -1,5 +1,8 @@
-// adding a simple comment
+let x =  (function (a, b)  {
+    return ( a * b);
+})
 
+console.log(x(4,5))
 
 //adding second comment
 
