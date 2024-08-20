@@ -9,6 +9,6 @@ else if (b<c)
     console.log(" b is the smaller number")
 else
 console.log("c is the smaller number ")
-let i=0
+/*let i=0
 var i=1
-console.log(i)
+console.log(i) not possible . Identifier i has already been declared */
