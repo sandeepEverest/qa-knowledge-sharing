@@ -5,17 +5,17 @@
 console.log(i) // error : i is not defined
 */
 
-/* for(i=0; i<=10; i++)
+for(i=0; i<=10; i++)
 {
     console.log(i)
     console.log(+i)
 }
     console.log(i)
-    console.log(+i) */
+    console.log(+i) 
 
-    /* try this */
+    /* try this 
     for(i=0; i<=10; i++)
 {
     console.log("Inside Loop-"+i)
 }
-    console.log("outside loop-"+i) 
+    console.log("outside loop-"+i) */
