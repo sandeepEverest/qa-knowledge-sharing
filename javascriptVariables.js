@@ -15,7 +15,7 @@ console.log(x)
 let y = --x + x--;
   let x = `abc`;
 //y=x
-console.log(x)
+console.log("Printing"+x)
 console.log(y)
 let x = BigInt("123456789012345678901234567890");
 //no float
